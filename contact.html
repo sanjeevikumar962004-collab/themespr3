@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Cargo Trucking Global</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-lucide="box"></i></div>
+                <span>Stackly<span style="color: var(--primary-orange);"> Supplychain</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="./index.html" >Home</a>
+                <a href="./aboutus.html">About Us</a>
+                <a href="./services.html">Services</a>
+                
+                <a href="./dashboard.html">Dashboard</a>
+                <a href="./contact.html"class="active">Contact</a>
+                
+            </div>
+
+            <div class="nav-actions">
+               
+                <a href="./login.html" class="btn btn-primary">Login </a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i data-lucide="menu"></i></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="./index.html">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./services.html">Services</a>
+          <a href="./dashboard.html">Dashboard</a>
+                <a href="./contact.html">Contact</a>
+        <a href="./login.html" style="color: var(--primary-orange);">Login</a>
+    </div>
+
+
+    <!-- Contact Hero -->
+    <header class="contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center">
+            <p class="section-subtitle justify-center" style="color: var(--primary-orange); margin-bottom: 10px;">Get In Touch</p>
+            <h1>Let's Move Your Business Forward</h1>
+            <p class="hero-text" style="max-width: 600px; margin: 20px auto;">
+                Have questions about our services or need a custom quote? Our logistics experts are ready to help.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="contact-layout">
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2 style="margin-bottom: 10px;">Send us a Message</h2>
+                    <p style="color: #666; margin-bottom: 30px;">Fill out the form below and we'll get back to you within 2 hours.</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@company.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject">
+                                    <option value="quote">Request a Quote</option>
+                                    <option value="tracking">Track a Shipment</option>
+                                    <option value="support">Customer Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell us about your shipping needs..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-full">SEND MESSAGE</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div class="contact-info-sidebar">
+                    <!-- Info Card 1 -->
+                    <div class="contact-info-card">
+                        <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <h4>Headquarters</h4>
+                            <p>123 Logistics Way, Suite 100<br>New York, NY 10012, USA</p>
+                        </div>
+                    </div>
+
+                    <!-- Info Card 2 -->
+                    <div class="contact-info-card">
+                        <div class="info-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <h4>Phone Support</h4>
+                            <p><strong>Main:</strong> +1 (555) 123-4567</p>
+                            <p><strong>Sales:</strong> +1 (555) 987-6543</p>
+                            <p style="font-size: 0.85rem; color: #888; margin-top: 5px;">Available 24/7</p>
+                        </div>
+                    </div>
+
+                    <!-- Info Card 3 -->
+                    <div class="contact-info-card">
+                        <div class="info-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>hello@cargotrucking.com</p>
+                            <p>sales@cargotrucking.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-container">
+                        <img src="./cct.webp" alt="Map Location">
+                        <a href="https://www.google.com/maps/place/Stackly/data=!4m7!3m6!1s0x3babefef7fd970bb:0xe11aef1a71994f9!8m2!3d11.6829566!4d78.1739798!16s%2Fg%2F11l660s35r!19sChIJu3DZf-_vqzsR-ZQZp_GuEQ4?authuser=0&hl=en&rclk=1" class="btn btn-white-sm map-btn"><i data-lucide="map"></i> View on Google Maps</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Offices -->
+    <section class="section-padding bg-gray">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <h2>Global Offices</h2>
+                <p style="color: #666;">Local expertise, global reach.</p>
+            </div>
+            
+            <div class="offices-grid">
+                <div class="office-card">
+                    <h3>London, UK</h3>
+                    <p>45 Oxford Street</p>
+                    <p class="text-sm text-orange">+44 20 7946 0123</p>
+                </div>
+                <div class="office-card">
+                    <h3>Berlin, DE</h3>
+                    <p>Alexanderplatz 1</p>
+                    <p class="text-sm text-orange">+49 30 123456</p>
+                </div>
+                <div class="office-card">
+                    <h3>Singapore, SG</h3>
+                    <p>88 Market Street</p>
+                    <p class="text-sm text-orange">+65 6789 0123</p>
+                </div>
+                <div class="office-card">
+                    <h3>Sydney, AU</h3>
+                    <p>200 George St</p>
+                    <p class="text-sm text-orange">+61 2 9876 5432</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo" style="color: var(--white); margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon"><i data-lucide="box"></i></div>
+                        <span>Stackly<span style="color: var(--primary-orange);">Supplychain</span></span>
+                    </a>
+                    <p style="color: #9ca3af; margin-bottom: 20px;">Powering efficient, automated logistics for businesses that scale.</p>
+                   <div class="footer-social">
+    <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="facebook"></i>
+    </a>
+
+    <a href="https://twitter.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="twitter"></i>
+    </a>
+
+    <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="instagram"></i>
+    </a>
+</div>
+
+<script>
+    lucide.createIcons();
+</script>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./services.html">Residential Moving</a></li>
+                        <li><a href="./services.html">Commercial Relocation</a></li>
+                        <li><a href="./services.html">Warehousing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        
+                        <li><a href="./dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i data-lucide="map-pin" style="width: 16px; margin-right: 8px;"></i> 123 Logistics, Chennai</li>
+                        <li><i data-lucide="phone" style="width: 16px; margin-right: 8px;"></i> +1 (505) 173-4567</li>
+                        <li><i data-lucide="mail" style="width: 16px; margin-right: 8px;"></i> hello@Stacklysupplychain.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Stackly Supplychain. All rights reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 20px;">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

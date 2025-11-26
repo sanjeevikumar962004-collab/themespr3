@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error | Cargo Trucking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-lucide="box"></i></div>
+                <span>Stackly<span style="color: var(--primary-orange);"> Supplychain</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="./index.html" >Home</a>
+                <a href="./aboutus.html">About Us</a>
+                <a href="./services.html">Services</a>
+                
+                <a href="./dashboard.html">Dashboard</a>
+                <a href="./contact.html">Contact</a>
+                
+            </div>
+
+            <div class="nav-actions">
+               
+                <a href="./login.html" class="btn btn-primary">Login </a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i data-lucide="menu"></i></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="./index.html">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./services.html">Services</a>
+          <a href="./dashboard.html">Dashboard</a>
+                <a href="./contact.html">Contact</a>
+        <a href="./login.html" style="color: var(--primary-orange);">Login</a>
+    </div>
+
+
+    <div class="error-body">
+        <div class="error-container">
+            <div class="error-content">
+                <div class="error-icon-wrapper">
+                    <i data-lucide="alert-triangle"></i>
+                </div>
+                <h1>Oops! Something Went Wrong</h1>
+                <p>We encountered an unexpected error while processing your request. This might be due to a mock backend connection.</p>
+                
+                <div class="error-actions">
+                    <button onclick="history.back()" class="btn btn-outline" style="border-color: #ddd; color: #333;">Go Back</button>
+                    <a href="index.html" class="btn btn-primary">Return Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo" style="color: var(--white); margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon"><i data-lucide="box"></i></div>
+                        <span>Stackly<span style="color: var(--primary-orange);">Supplychain</span></span>
+                    </a>
+                    <p style="color: #9ca3af; margin-bottom: 20px;">Powering efficient, automated logistics for businesses that scale.</p>
+                   <div class="footer-social">
+    <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="facebook"></i>
+    </a>
+
+    <a href="https://twitter.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="twitter"></i>
+    </a>
+
+    <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="instagram"></i>
+    </a>
+</div>
+
+<script>
+    lucide.createIcons();
+</script>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./services.html">Residential Moving</a></li>
+                        <li><a href="./services.html">Commercial Relocation</a></li>
+                        <li><a href="./services.html">Warehousing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        
+                        <li><a href="./dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i data-lucide="map-pin" style="width: 16px; margin-right: 8px;"></i> 123 Logistics, Chennai</li>
+                        <li><i data-lucide="phone" style="width: 16px; margin-right: 8px;"></i> +1 (505) 173-4567</li>
+                        <li><i data-lucide="mail" style="width: 16px; margin-right: 8px;"></i> hello@Stacklysupplychain.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Stackly Supplychain. All rights reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 20px;">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
