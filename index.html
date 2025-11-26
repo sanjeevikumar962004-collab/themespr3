@@ -13,8 +13,7 @@
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+<nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
                 <div class="logo-icon"><i data-lucide="box"></i></div>
@@ -22,17 +21,23 @@
             </a>
 
             <div class="nav-links">
-                <a href="./index.html" class="active">Home</a>
+                <div class="dropdown">
+                    <a href="./index.html" class="active dropdown-trigger">
+                        Home <i data-lucide="chevron-down" style="width: 16px; margin-left: 4px;"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="./home2.html">Home2</a>
+                        
+                    </div>
+                </div>
+                
                 <a href="./aboutus.html">About Us</a>
                 <a href="./services.html">Services</a>
-                
                 <a href="./dashboard.html">Dashboard</a>
                 <a href="./contact.html">Contact</a>
-                
             </div>
 
             <div class="nav-actions">
-               
                 <a href="./login.html" class="btn btn-primary">Login </a>
             </div>
 
@@ -40,13 +45,24 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu Dropdown -->
     <div class="mobile-menu hidden" id="mobile-menu">
-        <a href="./index.html">Home</a>
+        <div class="mobile-item-wrapper">
+            <div class="mobile-item-header">
+                <a href="./index.html">Home</a>
+                <button class="mobile-dropdown-btn" id="mobile-home-toggle">
+                    <i data-lucide="chevron-down"></i>
+                </button>
+            </div>
+            <div class="mobile-submenu hidden" id="mobile-home-submenu">
+                <a href="./home2.html">Home2</a>
+                
+            </div>
+        </div>
+
         <a href="./aboutus.html">About Us</a>
         <a href="./services.html">Services</a>
-          <a href="./dashboard.html">Dashboard</a>
-                <a href="./contact.html">Contact</a>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./contact.html">Contact</a>
         <a href="./login.html" style="color: var(--primary-orange);">Login</a>
     </div>
 

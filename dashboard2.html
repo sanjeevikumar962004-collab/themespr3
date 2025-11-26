@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Cargo Trucking</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-light-body">
+
+    <!-- Light Navigation (Matches Main Site) -->
+ 
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-lucide="box"></i></div>
+                <span>Stackly<span style="color: var(--primary-orange);"> Supplychain</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="./home2.html" >Home</a>
+                <a href="./about2.html">About Us</a>
+                <a href="./service2.html">Services</a>
+                
+                <a href="./dashboard2.html"class="active">Dashboard</a>
+                <a href="./contact2.html">Contact</a>
+                
+            </div>
+
+            <div class="nav-actions">
+               
+                <a href="./login.html" class="btn btn-primary">Login </a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i data-lucide="menu"></i></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="./home2.html">Home</a>
+        <a href="./about2.html">About Us</a>
+        <a href="./service2.html">Services</a>
+          <a href="./dashboard2.html">Dashboard</a>
+                <a href="./contact2.html">Contact</a>
+        <a href="./login.html" style="color: var(--primary-orange);">Login</a>
+    </div>
+
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content container">
+        
+        <div class="dashboard-header">
+            <div>
+                <h1>Dashboard Overview</h1>
+                <p>Welcome back, Alex. Here's what's happening today.</p>
+            </div>
+            
+        </div>
+
+        <!-- Metrics Row -->
+        <div class="metrics-grid">
+            <!-- Card 1 -->
+            <div class="metric-card">
+                <div class="metric-info">
+                    <span class="metric-label">TOTAL REVENUE</span>
+                    <h3 class="metric-value">₹4,52,340</h3>
+                </div>
+                <div class="metric-trend positive">
+                    <i data-lucide="arrow-up"></i> 8.3%
+                </div>
+                <div class="metric-icon"><i data-lucide="indian-rupee"></i></div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="metric-card">
+                <div class="metric-info">
+                    <span class="metric-label">NEW ORDERS</span>
+                    <h3 class="metric-value">320</h3>
+                </div>
+                <div class="metric-trend positive">
+                    <i data-lucide="arrow-up"></i> 5.7%
+                </div>
+                <div class="metric-icon"><i data-lucide="shopping-cart"></i></div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="metric-card">
+                <div class="metric-info">
+                    <span class="metric-label">TOTAL CUSTOMERS</span>
+                    <h3 class="metric-value">1,245</h3>
+                </div>
+                <div class="metric-trend negative">
+                    <i data-lucide="arrow-down"></i> 2.1%
+                </div>
+                <div class="metric-icon"><i data-lucide="users"></i></div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="metric-card">
+                <div class="metric-info">
+                    <span class="metric-label">FLEET AVAILABILITY</span>
+                    <h3 class="metric-value">78/100</h3>
+                </div>
+                <div class="metric-trend neutral">
+                    Stable
+                </div>
+                <div class="metric-icon"><i data-lucide="truck"></i></div>
+            </div>
+        </div>
+
+        <!-- Sales Statistics (Large Bar Chart) -->
+        <div class="chart-card large-chart">
+            <div class="chart-header">
+                <h2>Sales Statistics</h2>
+                <p>Monthly corporate product sales over the past six months.</p>
+            </div>
+            
+            <div class="bar-chart-container">
+                <div class="y-axis">
+                    <span>₹100k</span>
+                    <span>₹80k</span>
+                    <span>₹60k</span>
+                    <span>₹40k</span>
+                    <span>₹20k</span>
+                    <span>₹0k</span>
+                </div>
+                <div class="bars-wrapper">
+                    <div class="bar-group">
+                        <div class="bar-fill" style="height: 65%;"><div class="tooltip">₹65k</div></div>
+                        <span class="x-label">May</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar-fill" style="height: 72%;"><div class="tooltip">₹72k</div></div>
+                        <span class="x-label">June</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar-fill" style="height: 81%;"><div class="tooltip">₹81k</div></div>
+                        <span class="x-label">July</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar-fill" style="height: 92%;"><div class="tooltip">₹92k</div></div>
+                        <span class="x-label">August</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar-fill" style="height: 87%;"><div class="tooltip">₹87k</div></div>
+                        <span class="x-label">Sept</span>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar-fill" style="height: 95%;"><div class="tooltip">₹95k</div></div>
+                        <span class="x-label">Oct</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Charts Row -->
+        <div class="bottom-charts-grid">
+            
+            <!-- Sales by Category (Pie Chart) -->
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h2>Shipment Type</h2>
+                </div>
+                <div class="pie-chart-wrapper">
+                    <!-- Interactive SVG Pie Chart -->
+                    <!-- Segments are created using stroke-dasharray logic on circles -->
+                    <div class="pie-container">
+                        <svg viewBox="0 0 32 32" class="pie-chart-svg">
+                            <!-- Express (Purple) 35% -->
+                            <circle class="pie-slice" r="16" cx="16" cy="16" stroke="#8b1588" stroke-dasharray="35 100" stroke-dashoffset="0"></circle>
+                            <!-- Standard (Blue) 25% -->
+                            <circle class="pie-slice" r="16" cx="16" cy="16" stroke="#7b61ff" stroke-dasharray="25 100" stroke-dashoffset="-35"></circle>
+                            <!-- Cold Chain (Yellow) 20% -->
+                            <circle class="pie-slice" r="16" cx="16" cy="16" stroke="#c29829" stroke-dasharray="20 100" stroke-dashoffset="-60"></circle>
+                            <!-- Freight (Gray) 20% -->
+                            <circle class="pie-slice" r="16" cx="16" cy="16" stroke="#9ca3af" stroke-dasharray="20 100" stroke-dashoffset="-80"></circle>
+                            
+                            <!-- Inner White Circle to make it a Donut -->
+                            <circle r="9" cx="16" cy="16" fill="#ffffff"></circle>
+                        </svg>
+                        
+                        <!-- Tooltip overlay (CSS handles visibility) -->
+                        <div class="pie-tooltip-overlay">
+                            <div class="pt-val" data-val="35%">35%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item"><span class="dot" style="background: #8b1588"></span> Express</div>
+                    <div class="legend-item"><span class="dot" style="background: #7b61ff"></span> Standard</div>
+                    <div class="legend-item"><span class="dot" style="background: #c29829"></span> Cold Chain</div>
+                    <div class="legend-item"><span class="dot" style="background: #9ca3af"></span> Freight</div>
+                </div>
+            </div>
+
+            <!-- Revenue by Region (Horizontal Bar Chart) -->
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h2>Revenue by Region</h2>
+                </div>
+                <div class="horiz-chart-container">
+                    <!-- Item 1 -->
+                    <div class="horiz-bar-group">
+                        <span class="h-label">Chennai</span>
+                        <div class="h-bar-track">
+                            <div class="h-bar-fill" style="width: 100%; background-color: #7b61ff;">
+                                <div class="tooltip-h">₹10.8L</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="horiz-bar-group">
+                        <span class="h-label">Bangalore</span>
+                        <div class="h-bar-track">
+                            <div class="h-bar-fill" style="width: 85%; background-color: #8b1588;">
+                                <div class="tooltip-h">₹9.2L</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="horiz-bar-group">
+                        <span class="h-label">Mumbai</span>
+                        <div class="h-bar-track">
+                            <div class="h-bar-fill" style="width: 90%; background-color: #9ca3af;">
+                                <div class="tooltip-h">₹9.8L</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="horiz-bar-group">
+                        <span class="h-label">Delhi</span>
+                        <div class="h-bar-track">
+                            <div class="h-bar-fill" style="width: 88%; background-color: #c29829;">
+                                <div class="tooltip-h">₹9.5L</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="horiz-bar-group">
+                        <span class="h-label">Hyderabad</span>
+                        <div class="h-bar-track">
+                            <div class="h-bar-fill" style="width: 65%; background-color: #333;">
+                                <div class="tooltip-h">₹7.0L</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="h-axis">
+                        <span>0L</span><span>2L</span><span>4L</span><span>6L</span><span>8L</span><span>10L</span><span>12L</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo" style="color: var(--white); margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon"><i data-lucide="box"></i></div>
+                        <span>Stackly<span style="color: var(--primary-orange);">Supplychain</span></span>
+                    </a>
+                    <p style="color: #9ca3af; margin-bottom: 20px;">Powering efficient, automated logistics for businesses that scale.</p>
+                   <div class="footer-social">
+    <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="facebook"></i>
+    </a>
+
+    <a href="https://twitter.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="twitter"></i>
+    </a>
+
+    <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="instagram"></i>
+    </a>
+</div>
+
+<script>
+    lucide.createIcons();
+</script>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./service2.html">Residential Moving</a></li>
+                        <li><a href="./service2.html">Commercial Relocation</a></li>
+                        <li><a href="./service2.html">Warehousing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                   <li><a href="./home2.html">Home</a></li>
+                        <li><a href="about2.html">About Us</a></li>
+                        <li><a href="./dashboard2.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i data-lucide="map-pin" style="width: 16px; margin-right: 8px;"></i> 123 Logistics, Chennai</li>
+                        <li><i data-lucide="phone" style="width: 16px; margin-right: 8px;"></i> +1 (505) 173-4567</li>
+                        <li><i data-lucide="mail" style="width: 16px; margin-right: 8px;"></i> hello@Stacklysupplychain.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Stackly Supplychain. All rights reserved.</p>
+                <div>
+                    <a href="#" style="margin-right: 20px;">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

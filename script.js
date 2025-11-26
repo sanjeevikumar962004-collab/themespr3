@@ -138,3 +138,24 @@ forms.forEach(form => {
         });
     }
 });
+
+
+
+// --- Mobile Dropdown Toggle ---
+const mobileHomeToggle = document.getElementById('mobile-home-toggle');
+const mobileHomeSubmenu = document.getElementById('mobile-home-submenu');
+
+if (mobileHomeToggle && mobileHomeSubmenu) {
+    mobileHomeToggle.addEventListener('click', (e) => {
+        // Prevent bubbling if needed
+        e.stopPropagation(); 
+        
+        // Toggle the hidden class
+        mobileHomeSubmenu.classList.toggle('hidden');
+        
+        // Rotate the icon based on state
+        const icon = mobileHomeSubmenu.classList.contains('hidden') ? 'chevron-down' : 'chevron-up';
+        mobileHomeToggle.innerHTML = `<i data-lucide="${icon}"></i>`;
+        lucide.createIcons();
+    });
+}
