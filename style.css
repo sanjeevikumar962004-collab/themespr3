@@ -833,42 +833,41 @@ h3 { font-size: 1.5rem; }
 /* ========================================= */
 /* 8. RESPONSIVE & DROPDOWN FIXES            */
 /* ========================================= */
+/* ========================================= */
+/* 8. RESPONSIVE & DROPDOWN FIXES            */
+/* ========================================= */
 
 /* Ensure Dropdown sits above everything */
 .dropdown-menu {
-    z-index: 1100; /* Higher than navbar */
-    white-space: nowrap; /* Prevents text from squishing */
+    z-index: 1100;
+    white-space: nowrap;
 }
 
-/* Tablet / Smaller Laptop Adjustments (900px - 769px) */
-/* Prevents links from hitting the logo before switching to mobile */
+/* --- UPDATE: TABLET & MOBILE BREAKPOINT (1024px and below) --- */
+/* This covers iPad Pro, iPad Air, and Mobile Phones */
 @media screen and (max-width: 1024px) {
-    .container {
-        padding: 0 15px; /* Reduce padding to save space */
-    }
     
-    .nav-links {
-        gap: 15px; /* Reduce gap between links */
-    }
-    
-    .nav-links a, .btn {
-        font-size: 0.9rem; /* Slightly smaller text */
-    }
-}
-
-/* MOBILE BREAKPOINT (768px and below) */
-@media screen and (max-width: 768px) {
-    /* FORCE HIDE Desktop Navigation */
+    /* 1. FORCE HIDE Desktop Elements */
     .nav-links {
         display: none !important; 
     }
+    
+    /* Hide the desktop "Login" button specifically */
+    .nav-actions {
+        display: none !important;
+    }
 
-    /* SHOW Mobile Menu Button */
+    /* 2. SHOW Mobile Menu Button */
     .mobile-menu-btn {
         display: block !important;
     }
 
-    /* Fix Mobile Menu Width */
+    /* 3. Adjust Layout for Mobile/Tablet Header */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Fix Mobile Menu positioning */
     .mobile-menu {
         width: 100%;
         left: 0;
@@ -876,8 +875,8 @@ h3 { font-size: 1.5rem; }
         border-top: 1px solid #eee;
     }
     
-    /* Adjust Hero Text for Mobile */
-    h1 { font-size: 2.5rem; }
+    /* Adjust Hero Text for smaller screens */
+    h1 { font-size: 2.8rem; }
     h2 { font-size: 2rem; }
     
     .hero-buttons {
@@ -887,8 +886,10 @@ h3 { font-size: 1.5rem; }
     .btn { width: 100%; }
 }
 
-/* DESKTOP BREAKPOINT (769px and above) */
-@media screen and (min-width: 769px) {
+/* --- DESKTOP BREAKPOINT (1025px and above) --- */
+/* Only shows full menu on Laptops and large Desktops */
+@media screen and (min-width: 1025px) {
+    
     /* FORCE HIDE Mobile Elements */
     .mobile-menu-btn {
         display: none !important;
@@ -899,12 +900,15 @@ h3 { font-size: 1.5rem; }
         display: none !important;
     }
 
-    /* Ensure Desktop Nav is Visible */
+    /* Ensure Desktop Nav & Actions are Visible */
     .nav-links {
         display: flex !important;
     }
+    
+    .nav-actions {
+        display: flex !important;
+    }
 }
-
 /* ========================================= */
 /* 8. SERVICES & CONTACT ADDITIONS           */
 /* ========================================= */
